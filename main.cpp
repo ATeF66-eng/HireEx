@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
+#include <numbers>
+
 int main(void) {
     printf("Welcome to Hirex\n the perfect place to find/offer a job\n");
 int x;
@@ -16,25 +18,28 @@ printf("1-Engineering\n 2-Medical field\n 3-Arts\n 4-Business\n 5-Education\n");
             int z=0;
             printf("1-Programming Engineer | Full Time | Cairo | at Siemens digital industries \n2-Communication Engineer | Part Time | Giza | at EgyptAir  Company \n3-IT Engineer | Part Time | Remotly | at FAMA Company \n4-Architecture Engineer| Full Time | Dubai | at Arabian Conctruction Company \n5-Electric field | Internship | Cairo | at Elswedy Electric Company \n");
             scanf("%d",&z);
-switch (z) {
-    case 1:
-        printf("The Requirements for this job is :\n");
-    break;
-    case 2:
-        printf("The requirements for this job is :\n");
-    break;
-    case 3:
-        printf("The requirements for this job is :\n");
-    break;
-    case 4:
-        printf("The requirements for this job is :\n");
-    break;
-    case 5:
-        printf("The requirements for this job is :\n");
-    break;
-    default:
-printf("Error :\n");
-}
+            if (z==1) {
+                switch (z) {
+                    case 1:
+                        printf("The Requirements for this job is :\n");
+                    break;
+                    case 2:
+                        printf("The requirements for this job is :\n");
+                    break;
+                    case 3:
+                        printf("The requirements for this job is :\n");
+                    break;
+                    case 4:
+                        printf("The requirements for this job is :\n");
+                    break;
+                    case 5:
+                        printf("The requirements for this job is :\n");
+                    break;
+                    default:
+                        printf("Error :\n");
+                }
+            }else
+                printf("Error :\n");
 
     }
     if (y ==2) {
@@ -43,5 +48,4 @@ printf("Error :\n");
 }
 
         }
-
 
