@@ -40,9 +40,16 @@ int main(void) {
 
             case 1:
 
-                printf(" 1-Engineering\n 2-Medical field\n 3-Science\n 4-Business\n 5-Education\n");
+                printf(" 1-Engineering\n 2-Medical field\n 3-Science\n 4-Education\n");
             int field;
             scanf("%d",&field);
+            while(field>4) {
+                printf("Error : Try again\n");
+                printf(" 1-Engineering\n 2-Medical field\n 3-Science\n 4-Business\n 5-Education\n");
+
+                scanf("%d",&field);
+
+            }
             switch(field) {
                 case 1:
 
@@ -52,13 +59,13 @@ int main(void) {
                 break;
 
                 case 2:
-                    printf(" 1-Cardiologist | full time | Cairo |at Clinca Egypt \n 2-Dentist | part time | Giza |at Al-Arabi clinics  \n 3-Surgeon | internship | Mansoura |at Technoclinc specialized clinics\n 4-Veterinarian |part time| Zifta |at Al Safa Veterinary clinic  \n 5-Allergist |full time| Cairo| at Core clinic|\n");
+                    printf(" 1-Cardiologist | full time | Cairo |at Clinca Egypt \n 2-Dentist | part time | Giza |at Al-Arabi clinics  \n 3-Surgeon | internship | Mansoura |at Technoclinc specialized clinics\n 4-Veterinarian |part time| Zifta |at Al Safa Veterinary clinic  \n 5-Allergist |full time| Cairo| at Core clinic\n");
                 job();
                 break;
                 case 3:
                     printf("1-Biologist | full time | Cairo | at downtown| 2-Chemist | full time | 6th of October city | at Chemical industry| 3-Environmental scientist | full time | ");
+job();
                 break;
-
 
             }
 break;
@@ -74,3 +81,4 @@ break;
 
 
 }
+
