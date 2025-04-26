@@ -31,7 +31,7 @@ int main(void) {
     printf("choose\n 1-find a job\n 2-offer a job\n");
     scanf("%d",&x);
     if(x==1) {
-        printf("1-Engineering\n 2-Medical field\n 3-Arts\n 4-Business\n 5-Education\n");
+        printf("1-Engineering\n 2-Medical field\n 3-Science\n 4-Business\n 5-Education\n");
         int field=0;
         scanf("%d",&field);
         switch(field) {
@@ -46,6 +46,8 @@ break;
                 printf("1-Cardiologist | full time | Cairo |at Clinca Egypt \n 2-Dentist | part time | Giza |at Al-Arabi clinics  \n 3-Surgeon | internship | Mansoura |at Technoclinc specialized clinics\n 4-Veterinarian |part time| Zifta |at Al Safa Veterinary clinic  \n 5-Allergist |full time| Cairo| at Core clinic|\n");
             job();
             break;
+            case 3:
+                printf("1-Biologist | full time | Cairo | at downtown| 2-Chemist | full time | 6th of Octobr city | at Chemical industry| 3-")
         }
         }
     }
