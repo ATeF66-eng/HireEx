@@ -2,37 +2,49 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
+void printe() {
+    printf("Error : Try again\n");
+}
+void print() {
+    printf("select an option \n 1-find a job\n 2-offer a job\n");
+
+}
 void job() {
     int type=0;
     scanf("%d",&type);
+while(type>5) {
+printe();
+    printf("Enter number from 1 to 5:");
+    scanf("%d",&type);
+}
     switch (type) {
         case 1:
             printf("The Requirements for this job are :\n");
-        break;
+            break;
         case 2:
             printf("The requirements for this job are :\n");
-        break;
+            break;
         case 3:
             printf("The requirements for this job are :\n");
-        break;
+            break;
         case 4:
             printf("The requirements for this job are :\n");
-        break;
+            break;
         case 5:
             printf("The requirements for this job are :\n");
-        break;
+            break;
         default:
-            printf("Error :\n");
+            printf("Error: Try again\n");
     }
 }
 int main(void) {
     printf("-------- Welcome to Hirex --------\n   (the best place to find & offer a job) \n");
     int x;
-    printf("select an option \n 1-find a job\n 2-offer a job\n");
+    print();
     scanf("%d",&x);
 
-    while(x>2) {
-        printf("select an option \n 1-find a job\n 2-offer a job\n");
+    while(x!=1 && x!=2) {
+print();
         scanf("%d",&x);
     }
 
@@ -44,8 +56,8 @@ int main(void) {
             int field;
             scanf("%d",&field);
             while(field>4) {
-                printf("Error : Try again\n");
-                printf(" 1-Engineering\n 2-Medical field\n 3-Science\n 4-Business\n 5-Education\n");
+            printe();
+                printf(" 1-Engineering\n 2-Medical field\n 3-Science\n 4-Education\n");
 
                 scanf("%d",&field);
 
@@ -63,10 +75,13 @@ int main(void) {
                 job();
                 break;
                 case 3:
-                    printf("1-Biologist | full time | Cairo | at downtown| 2-Chemist | full time | 6th of October city | at Chemical industry| 3-Environmental scientist | full time | ");
+                    printf("1-Biologist | full time | Cairo | at downtown \n 2-Chemist | full time | 6th of October city | at Chemical industry \n 3-Environmental scientist | full time |at Chemical industry\n 4-Data scientist | remotly | Cairo |at aptendo\n 5-Aeronautical Engineer | full time | Giza |at chemical industry \n");
 job();
                 break;
-
+case 4:
+    printf("1-Math teacher | full time | Cairo |at al-Ahram secondary school \n 2-Arabic teacher | part time | Mansoura | at al-shahid Ahmed El-Mansy school\n 3-school principal | full time | Mit Ghamr |at Mohamed Koraim primary school\n 4-English teacher | part time | Zagazig |at Omar makram secondary  school\n 5-Physics teacher | full time | Alexandria |at Soliman El-halaby secondary school\n ");
+job();
+                break;
             }
 break;
             case 2:
@@ -74,7 +89,7 @@ break;
                 printf("company");
             break;
             default:
-                printf("Error : Try again\n");
+                printe();
             break;
 
         }
