@@ -16,7 +16,7 @@ void job() {
     int type;
     scanf("%d",&type);
 
-    while(type>5) {
+    while(type !=1 && type !=2 && type !=3 && type !=4 && type !=5) {
         printe();
         printf("Enter number from 1 to 5:");
         scanf("%d",&type);
@@ -24,7 +24,7 @@ void job() {
 
     switch (type) {
         case 1:
-            printf("The Requirements for this job are :\n");
+            printf("The Requirements for this job are : \n");
             break;
         case 2:
             printf("The requirements for this job are :\n");
@@ -67,7 +67,7 @@ int main(void) {
                 int field;
                 scanf("%d",&field);
 
-                while(field>4) {
+                while(field!=1  && field!=2 && field!=3 && field!=4) {
                     printe();
                     printf(" 1-Engineering\n 2-Medical field\n 3-Science\n 4-Education\n");
 
