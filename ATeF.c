@@ -72,7 +72,8 @@ void job2() {
 }
 void job3() {
     char cv[100];
-    printf("The requirements for this job are:\n 1-Bachelor of science \n 2-");
+    printf("The requirements for this job are:\n 1-Bachelor of science \n 2-Practical skill \n 3-Soft skills \n 4-Good English \n Do you have these skills? \n answer yes or no: ");
+    scanf("%s",&cv);
 }
 void job4() {
     char cv[100];
