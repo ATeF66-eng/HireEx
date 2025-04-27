@@ -8,7 +8,7 @@ void printe() {
 }
 
 void print() {
-    printf("select an option \n 1-find a job\n 2-offer a job\n");
+    printf("1-find a job\n 2-offer a job\nselect an option :");
 
 }
 
