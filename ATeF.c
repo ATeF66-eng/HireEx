@@ -53,6 +53,7 @@ void job() {
         case 5:
             printf(" Enter your name: ");
         scanf("%s",&name);
+
         printf("Enter your age:");
         scanf("%d",&age);
             break;
@@ -62,23 +63,45 @@ void job() {
 }
 void job1() {
     char cv[100];
-    printf("The requirements for this job are: \n1-Bachelor of Engineering \n 2-Have good English\n 3-Have experience\n Do you have these skills? \n answer yes or no:   ");
+    printf("The requirements for this job are: \n");
+    printf("1-Bachelor of Engineering \n Do you have this skill? \n answer yes or no:");
+    scanf("%s",&cv);
+    printf("2-Have good English\n Do you have this skill? \n answer yes or no:   ");
+    scanf("%s",&cv);
+    printf("3-Have experience\n Do you have this skill? \n answer yes or no:  ");
     scanf("%s",&cv);
 }
 void job2() {
     char cv[100];
-    printf("The requirements for this job are:\n 1-Bachelor of medicine \n 2-Have good English\n 3-Have experience\n Do you have these skills? \n answer yes or no: ");
+    printf("The requirements for this job are:\n");
+    printf("1-Bachelor of medicine \n  Do you have this skill? \n answer yes or no: ");
     scanf("%s",&cv);
+    printf("2-Have good English\n Do you have this skill?\n answer yes or no: ");
+    scanf("%s",&cv);
+    printf("3-Have experience\n Do you have this skill? \n answer yes or no: ");
 }
 void job3() {
     char cv[100];
-    printf("The requirements for this job are:\n 1-Bachelor of science \n 2-Practical skill \n 3-Soft skills \n 4-Good English \n Do you have these skills? \n answer yes or no: ");
+    printf("The requirements for this job are:\n ");
+    printf("1-Bachelor of science \n Do you have this skill? \n answer yes or no: ");
     scanf("%s",&cv);
+    ;printf("2-Practical skill \n Do you have this skill?\n answer yes or no: ");
+    scanf("%s",&cv);
+    printf("3-Soft skills \n Do you have this skill?\n answer yes or no: ");
+    scanf("%s",&cv);
+    printf("4-Good English \n Do you have this skill? \n answer yes or no: ");
 }
 void job4() {
     char cv[100];
-    printf("The requirements for this job are:\n 1-Bachelor of Education \n 2-Communication skill \n 3-Explanation skill \n 4- Encouragement skill \n Do you have these skills? \n answer yes or no ");
-scanf("%s",&cv);
+    printf("The requirements for this job are:\n ");
+    printf("1-Bachelor of Education \n Do you have this skill? \n answer yes or no: ");
+    scanf("%s",&cv);
+    printf("2-Communication skill \n Do you have this skill? \n answer yes or no: ");
+    scanf("%s",&cv);
+    printf("3-Explanation skill \n  Do you have this skill? \n answer yes or no: ");
+    scanf("%s",&cv);
+    printf("4- Encouragement skill \n Do you have this skill? \n answer yes or no: ");
+    scanf("%s",&cv);
 }
 int main(void) {
 
@@ -87,7 +110,6 @@ int main(void) {
         printf("-------- Welcome to Hirex --------\n   (the best place to find & offer a job) \n");
         print();
         scanf("%d",&x);
-
         while(x!=1 && x!=2) {
             printe();
             print();
