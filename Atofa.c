@@ -44,8 +44,8 @@ int job() {
 void req() {
     char name [100];
     printf("\n your name is: ");
-    
-    scanf("%s", name);
+
+    scanf(" %[^\n]", name);
 
     printf("\n your age: ");
     float age;
