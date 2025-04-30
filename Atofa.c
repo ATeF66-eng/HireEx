@@ -6,8 +6,13 @@
 int ex() {
     char prob[100];
     int rate;
+
     printf("please rate us from 0 to 5\n");
     scanf("%d",&rate);
+    if (rate!=1 && rate!=2 && rate!=3 && rate!=4 && rate!=5) {
+        printf("Please enter number from 1 to 5: \n");
+        scanf("%d", &rate);
+    }
     printf("if you have problem send here: www.hireX.com\n or text us on: abdelrahmanelsabea@gmail.com\n ");
     printf("or please tell us here:\n");
     scanf("%s", prob);
@@ -37,8 +42,9 @@ int job() {
 }
 
 void req() {
+    char name [100];
     printf("\n your name is: ");
-    char name[20];
+    
     scanf("%s", name);
 
     printf("\n your age: ");
