@@ -53,7 +53,7 @@ int ex() {
         scanf("%d", &rate);
     }
     printf("If you have any problem send us here: hirex_offical@gmail.com ");
-    printf("\n How could we improve our serveses :");
+    printf("\n How could we improve our services :");
     scanf("%s", prob);
 
     printf("\n\nthanks for using our Site\n");
@@ -69,16 +69,16 @@ void job1() {
     req();
 
     printf("\n 1-Do you have a bachelor of Engineering \n Answer yes or no: ");
-    scanf("%s]", bc);
+    scanf("  %[^\n]", bc);
 
     printf("\nWhere did you get your certificate (If you have it) ? \n Answer the question:  ");
-    scanf("%s]", uni);
+    scanf("  %[^\n]", uni);
 
     printf("\nDid you know how to use AutoCad ?\n Answer yes or no: ");
-    scanf("%s]", bc1);
+    scanf("  %[^\n]", bc1);
 
     printf("\n\n 2-Your score in EN is B2 or above ? \n Answer yes or no: ");
-    scanf("%s]", en);
+    scanf("  %[^\n]", en);
 }
 
 void job2() {
@@ -168,7 +168,7 @@ void add_job(char company[100], char job_field[100], char job[200]) {
     printf("Company: %s\n", company);
     printf("Field: %s\n", job_field);
     printf("Job:  %s\n\n", job);
-    
+
 }
 
 int main(void) {
@@ -213,7 +213,7 @@ int main(void) {
 
                 case 2:
                     printf(" 1-Cardiologist | full time | Cairo |at Clinca Egypt \n2-Dentist | part time | Giza |at Al-Arabi clinics \n3-Surgeon | internship | Mansoura |at Technoclinc specialized clinics\n4-Veterinarian |part time| Zifta |at Al Safa Veterinary clinic \n5-Allergist |full time| Cairo| at Core clinic\n6-exit\n");
-                    
+
                     if (job() == 0)  {
                     ex();
                     return 0;
@@ -226,11 +226,11 @@ int main(void) {
 
                 case 3:
                     printf("1-Biologist | full time | Cairo | at downtown \n2-Chemist | full time | 6th of October city | at Chemical industry \n3-Environmental scientist | full time |at Chemical industry\n4-Data scientist | remotely | Cairo |at aptendo\n5-Aeronautical Engineer | full time | Giza |at chemical industry \n6-exit\n");
-                    
+
                     if (job() == 0)  {
                     ex();
                     return 0;
-                    }   
+                    }
 
                     job3();
                     acceptance();
@@ -239,7 +239,7 @@ int main(void) {
 
                 case 4:
                     printf("1-Math teacher | full time | Cairo |at al-Ahram secondary school \n2-Arabic teacher | part time | Mansoura | at al-shahid Ahmed El-Mansy school\n3-school principal | full time | Mit Ghamr |at Mohamed Koraim primary school\n4-English teacher | part time | Zagazig |at Omar makram secondary  school\n5-Physics teacher | full time | Alexandria |at Soliman El-halaby secondary school\n6-exit\n");
-                    
+
                     if (job() == 0)  {
                     ex();
                     return 0;
@@ -258,17 +258,17 @@ int main(void) {
         }
 
         case 2:
-            
+
 
             printf("Enter your company name: ");
             char company[100], job_field[100], job[200];
             scanf(" %[^\n]", company);
 
             printf("Enter job field: ");
-            scanf(" %s", job_field);
+            scanf("  %[^\n]", job_field);
 
             printf("Enter job title and details: ");
-            scanf(" %s", job);
+            scanf("  %[^\n]", job);
 
             add_job(company, job_field, job);
         break;
@@ -277,7 +277,7 @@ int main(void) {
             printf("\n Invalid Number... Try again\n\n");
         break;
 
-        case 3: 
+        case 3:
             printf("please rate us from 0 to 5\n");
             int rate;
             scanf("%d",&rate);
@@ -289,7 +289,7 @@ int main(void) {
             }
 
             printf("If you have any problem send us here: hirex_offical@gmail.com ");
-            printf("\n How could we improve our serveses :");  
+            printf("\n How could we improve our services :");
             char prob[100];
             scanf("%s", prob);
             printf("\n\nthanks for using our Site\n");
