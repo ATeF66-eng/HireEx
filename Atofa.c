@@ -24,12 +24,14 @@ int job() {
 }
 
 void req() {
+
+    printf("\n\n\nWe would like to ask you some questions:\n ");
     char name[100];
-    printf("\n your name is: ");
+    printf("\n Your name is: ");
 
     scanf(" %[^\n]", name);
 
-    printf("\n your age: ");
+    printf("\n Your age: ");
     float age;
     scanf("%f", &age);
 
@@ -38,6 +40,25 @@ void req() {
     scanf("%f", &exp);
 }
 
+int ex() {
+    char prob[100];
+    int rate;
+
+    printf("please rate us from 0 to 5\n");
+    scanf("%d",&rate);
+
+    while (rate!=0 && rate!=1 && rate!=2 && rate!=3 && rate!=4 && rate!=5 ) {
+        printf("\n Invalid Number... Try again\n\n");
+        printf("Please enter number from 1 to 5: \n");
+        scanf("%d", &rate);
+    }
+    printf("If you have any problem send us here: hirex_offical@gmail.com ");
+    printf("\n How could we improve our serveses :");
+    scanf("%s", prob);
+
+    printf("\n\nthanks for using our Site\n");
+    return 0;
+}
 
 void job1() {
     char bc[5];
@@ -46,18 +67,18 @@ void job1() {
     char uni[20];
 
     req();
-    printf("\n\n\nWe will ask you some questions: \n");
-    printf("\n 1-Do you have a bachelor of Engineering \n\n Answer yes or no: ");
-    scanf("%[^\n]", bc);
 
-    printf("\nWhere did you get your certificate ? (If you have it)");
-    scanf("%[^\n]", uni);
+    printf("\n 1-Do you have a bachelor of Engineering \n Answer yes or no: ");
+    scanf("%s]", bc);
 
-    printf("\nDid you know how to use AutoCad ?\n\n Answer yes or no: ");
-    scanf("%[^\n]", bc1);
+    printf("\nWhere did you get your certificate (If you have it) ? \n Answer the question:  ");
+    scanf("%s]", uni);
 
-    printf("\n\n 2-Your score in EN is B2 or above ? \n\n Answer yes or no: ");
-    scanf("%[^\n]", en);
+    printf("\nDid you know how to use AutoCad ?\n Answer yes or no: ");
+    scanf("%s]", bc1);
+
+    printf("\n\n 2-Your score in EN is B2 or above ? \n Answer yes or no: ");
+    scanf("%s]", en);
 }
 
 void job2() {
@@ -67,19 +88,19 @@ void job2() {
     char uni[20];
 
     req();
-    printf("\n\n\nWe will ask you some questions:\n");
 
-    printf("\n 1-Do you have a bachelor of medicine? \n\n Answer yes or no: ");
-    scanf("%[^\n]", bc);
 
-    printf("\nWhere did you get your certificate ? (If you have it)\n\n Answer yes or no:");
-    scanf("%[^\n]", uni);
+    printf("\n 1-Do you have a bachelor of medicine? \n Answer yes or no: ");
+    scanf("%s", bc);
 
-    printf("\nDo you have the BME certificate?");
-    scanf("%[^\n]", bc1);
+    printf("\nWhere did you get your certificate ? \n Answer yes or no:");
+    scanf("%s", uni);
 
-    printf("\n\n 2-Your score in EN is B2 or above?\n\n Answer yes or no: ");
-    scanf("%[^\n]", en);
+    printf("\nDo you have the BME certificate (If you have it) ?\n Answer the question: ");
+    scanf("%s", bc1);
+
+    printf("\n\n 2-Your score in EN is B2 or above?\n Answer yes or no: ");
+    scanf("%s", en);
 }
 
 void job3() {
@@ -90,21 +111,21 @@ void job3() {
     char uni[20];
 
     req();
-    printf("\n\n\nWe will ask you some questions:\n ");
-    printf("\n 1-Do you have a bachelor of science? \n\n Answer yes or no: ");
-    scanf("%[^\n]", bc);
 
-    printf("\nWhere did you get your certificate ? (If you have it)");
-    scanf("%[^\n]", uni);
+    printf("\n 1-Do you have a bachelor of science? \n Answer yes or no: ");
+    scanf("%s", bc);
 
-    printf("\n 2-Practical skill \n   Do you have this skill?\n\n Answer yes or no: ");
-    scanf("%[^\n]", bc1);
+    printf("\nWhere did you get your certificate (If you have it)? \n Answer the question: ");
+    scanf("%s", uni);
 
-    printf("\n 3-Soft skills \n   Do you have this skill?\n\n Answer yes or no: ");
-    scanf("%[^\n]", bc2);
+    printf("\n 2-Practical skill \n   Do you have this skill?\n Answer yes or no: ");
+    scanf("%s", bc1);
 
-    printf("\n 4-Your score in EN is B2 or above ? \n\n Answer yes or no: ");
-    scanf("%[^\n]", en);
+    printf("\n 3-Soft skills \n   Do you have this skill?\n Answer yes or no: ");
+    scanf("%s", bc2);
+
+    printf("\n 4-Your score in EN is B2 or above ? \n Answer yes or no: ");
+    scanf("%s", en);
 }
 
 void job4() {
@@ -115,22 +136,21 @@ void job4() {
     char uni[20];
 
     req();
-    printf("\n\n\nWe will ask you some questions:\n ");
 
-    printf("\n 1-Do you have a bachelor of literature \n\n Answer yes or no: ");
-    scanf("%[^\n]", bc);
+    printf("\n 1-Do you have a bachelor of literature \n Answer yes or no: ");
+    scanf("%s", bc);
 
-    printf("\nWhere did you get your certificate ? (If you have it)");
-    scanf("%[^\n]", uni);
+    printf("\nWhere did you get your certificate (If you have it) ? \nAnswer the question: ");
+    scanf("%s", uni);
 
-    printf("\n 2-Communication skill \n   Do you have this skill? \n\n Answer yes or no: ");
-    scanf("%[^\n]", bc1);
+    printf("\n 2-Communication skill \n   Do you have this skill? \n Answer yes or no: ");
+    scanf("%s", bc1);
 
-    printf("\n 3-Explanation skill \n   Do you have this skill? \n\n Answer yes or no: ");
-    scanf("%[^\n]", bc2);
+    printf("\n 3-Explanation skill \n   Do you have this skill? \n Answer yes or no: ");
+    scanf("%s", bc2);
 
-    printf("\n 4-Your score in EN is B2 or above ? \n\n Answer yes or no: ");
-    scanf("%[^\n]", en);
+    printf("\n 4-Your score in EN is B2 or above ? \n Answer yes or no: ");
+    scanf("%s", en);
 }
 
 void acceptance() {
@@ -142,24 +162,6 @@ void acceptance() {
     }
 }
 
-int ex() {
-    char prob[100];
-    int rate;
-
-    printf("please rate us from 0 to 5\n");
-    scanf("%d",&rate);
-    while (rate!=1 && rate!=2 && rate!=3 && rate!=4 && rate!=5) {
-        printf("\n Invalid Number... Try again\n\n");
-        printf("Please enter number from 1 to 5: \n");
-        scanf("%d", &rate);
-    }
-    printf("\nif you have a problem send here: www.hireX.com\n or text us on: abdelrahmanelsabea@gmail.com\n ");
-    printf("or please tell us here:\n");
-    scanf("%s", prob);
-
-    printf("\nthanks for using our Site");
-    return 0;
-}
 
 void add_job(char company[100], char job_field[100], char job[200]) {
     printf("\nNew job added successfully!\n");
@@ -259,13 +261,13 @@ int main(void) {
 
             printf("Enter your company name: ");
             char company[100], job_field[100], job[200];
-            scanf(" %[^\n]", company);
+            scanf(" %s", company);
 
             printf("Enter job field: ");
-            scanf(" %[^\n]", job_field);
+            scanf(" %s", job_field);
 
             printf("Enter job title and details: ");
-            scanf(" %[^\n]", job);
+            scanf(" %s", job);
 
             add_job(company, job_field, job);
         break;
@@ -278,11 +280,18 @@ int main(void) {
             printf("please rate us from 0 to 5\n");
             int rate;
             scanf("%d",&rate);
-            printf("if you have problem send here: www.hireX.com or text us on: abdelrahmanelsabea@gmail.com ");
-            printf("or please tell us here:");  
+
+            while(rate!=0 && rate!=1 && rate!=2 && rate!=3 && rate!=4 && rate!=5 ){
+                printf("\n Invalid Number... Try again\n\n");
+                printf("please rate us from 0 to 5\n");
+                scanf("%d",&rate);
+            }
+
+            printf("If you have any problem send us here: hirex_offical@gmail.com ");
+            printf("\n How could we improve our serveses :");  
             char prob[100];
-            scanf("%[^\n]", prob);
-            printf("thanks for using our application-");
+            scanf("%s", prob);
+            printf("\n\nthanks for using our Site\n");
         }
 
 }
