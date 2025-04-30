@@ -173,7 +173,16 @@ int main(void) {
                     acceptance();
                 break;
                 case 5:
-                    printf("_________thanks for visiting us_______");
+            char prob[100];
+        int rate;
+            printf("please rate us from 0 to 5\n");
+        scanf("%d",&rate);
+        printf("if you have problem send here: www.hireX.com or text us on: abdelrahmanelsabea@gmail.com ");
+        printf("or please tell us here:");
+        scanf("%s",prob);
+        
+            printf("_________thanks for using our application_______-");
+
                     return 0;
                 }
         break;
