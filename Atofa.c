@@ -250,9 +250,10 @@ int main(void) {
         }
 
         case 2:
-            char company[100], job_field[100], job[200];
+            
 
             printf("Enter your company name: ");
+            char company[100], job_field[100], job[200];
             scanf(" %[^\n]", company);
 
             printf("Enter job field: ");
