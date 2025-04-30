@@ -189,7 +189,14 @@ int main(void) {
         break;
 
         case 3:
-            printf("_________thanks for visiting us_______-");
+            char prob[100];
+        int rate;
+            printf("please rate us from 0 to 5\n");
+        scanf("%d",&rate);
+        printf("if you have any problem please tell us here:");
+        scanf("%s", prob);
+            printf("_________thanks for using our application_______-");
+
             return 0;
     }
 
