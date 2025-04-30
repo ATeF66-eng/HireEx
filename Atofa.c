@@ -3,6 +3,18 @@
 #include <string.h>
 #include <math.h>
 
+int ex() {
+    char prob[100];
+    int rate;
+    printf("please rate us from 0 to 5\n");
+    scanf("%d",&rate);
+    printf("if you have problem send here: www.hireX.com\n or text us on: abdelrahmanelsabea@gmail.com\n ");
+    printf("or please tell us here:\n");
+    scanf("%s", prob);
+
+    printf("thanks for using our application-");
+    return 0;
+}
 int job() {
     int type, age;
     char name[100];
@@ -140,34 +152,50 @@ int main(void) {
             switch (field_choice) {
                 case 1:
                     printf("\n1-Programming Engineer | Full Time | Cairo | at Siemens digital industries \n2-Communication Engineer | Part Time | Giza | at EgyptAir  Company \n3-IT Engineer | Part Time | Remotely | at FAMA Company \n4-Architecture Engineer| Full Time | Dubai | at Arabian Conctruction Company \n5-Electric field | Internship | Cairo | at Elswedy Electric Company \n6-exit\n");
-                    if (job() == 0) return 0;
+                    if (job() == 0) {
+                        ex();
+                        return 0;
+                    }
                     job1();
                     acceptance();
+                ex();
                     break;
 
                 case 2:
                     printf(" 1-Cardiologist | full time | Cairo |at Clinca Egypt \n2-Dentist | part time | Giza |at Al-Arabi clinics \n3-Surgeon | internship | Mansoura |at Technoclinc specialized clinics\n4-Veterinarian |part time| Zifta |at Al Safa Veterinary clinic \n5-Allergist |full time| Cairo| at Core clinic\n6-exit\n");
-                    if (job() == 0) return 0;
+                if (job() == 0)  {
+                    ex();
+                    return 0;
+                }
                     job2();
                     acceptance();
+                ex();
                     break;
 
                 case 3:
                     printf("1-Biologist | full time | Cairo | at downtown \n2-Chemist | full time | 6th of October city | at Chemical industry \n3-Environmental scientist | full time |at Chemical industry\n4-Data scientist | remotely | Cairo |at aptendo\n5-Aeronautical Engineer | full time | Giza |at chemical industry \n6-exit\n");
-                    if (job() == 0) return 0;
+                if (job() == 0)  {
+                    ex();
+                    return 0;
+                }
                     job3();
                     acceptance();
+                ex();
                     break;
 
                 case 4:
                     printf("1-Math teacher | full time | Cairo |at al-Ahram secondary school \n2-Arabic teacher | part time | Mansoura | at al-shahid Ahmed El-Mansy school\n3-school principal | full time | Mit Ghamr |at Mohamed Koraim primary school\n4-English teacher | part time | Zagazig |at Omar makram secondary  school\n5-Physics teacher | full time | Alexandria |at Soliman El-halaby secondary school\n6-exit\n");
-                    if (job() == 0) return 0;
+                if (job() == 0)  {
+                    ex();
+                    return 0;
+                }
                     job4();
                     acceptance();
+                ex();
                     break;
 
                 case 5:
-                    printf("thanks for visiting us\n");
+                ex();
                     return 0;
             }
             break;
@@ -204,14 +232,6 @@ int main(void) {
 
             printf("thanks for using our application-");
     }
-char prob[100];
-        int rate;
-            printf("please rate us from 0 to 5\n");
-        scanf("%d",&rate);
-        printf("if you have problem send here: www.hireX.com or text us on: abdelrahmanelsabea@gmail.com ");
-        printf("or please tell us here:");
-        scanf("%s", prob);
 
-            printf("thanks for using our application-");
-    return 0;
 }
+
