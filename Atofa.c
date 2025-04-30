@@ -173,6 +173,7 @@ int main(void) {
                     acceptance();
                 break;
                 case 5:
+                    printf("_________thanks for visiting us_______");
                     return 0;
                 }
         break;
@@ -188,6 +189,7 @@ int main(void) {
         break;
 
         case 3:
+            printf("_________thanks for visiting us_______-");
             return 0;
     }
 
