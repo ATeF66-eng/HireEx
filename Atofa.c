@@ -204,6 +204,14 @@ int main(void) {
 
             printf("thanks for using our application-");
     }
+char prob[100];
+        int rate;
+            printf("please rate us from 0 to 5\n");
+        scanf("%d",&rate);
+        printf("if you have problem send here: www.hireX.com or text us on: abdelrahmanelsabea@gmail.com ");
+        printf("or please tell us here:");
+        scanf("%s", prob);
 
+            printf("thanks for using our application-");
     return 0;
 }
