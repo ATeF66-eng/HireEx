@@ -5,7 +5,6 @@
 
 int job() {
     int type, age;
-    char name[100];
 
     printf("\n Choose type:  ");
     scanf("%d", &type);
@@ -24,8 +23,25 @@ int job() {
     return 1;
 }
 
+void req() {
+    char name[100];
+    printf("\n your name is: ");
+
+    scanf(" %[^\n]", name);
+
+    printf("\n your age: ");
+    float age;
+    scanf("%f", &age);
+
+    printf("\n How many years of experience do you have : ");
+    float exp;
+    scanf("%f", &exp);
+}
+
+
 void job1() {
     char bc[5];
+    char bc1[5];
     char en[5];
     char uni[20];
 
@@ -38,7 +54,7 @@ void job1() {
     scanf("%[^\n]", uni);
 
     printf("\nDid you know how to use AutoCad ?\n\n Answer yes or no: ");
-    scanf("%[^\n]", bc);
+    scanf("%[^\n]", bc1);
 
     printf("\n\n 2-Your score in EN is B2 or above ? \n\n Answer yes or no: ");
     scanf("%[^\n]", en);
@@ -46,6 +62,7 @@ void job1() {
 
 void job2() {
     char bc[5];
+    char bc1[5];
     char en[5];
     char uni[20];
 
@@ -59,7 +76,7 @@ void job2() {
     scanf("%[^\n]", uni);
 
     printf("\nDo you have the BME certificate?");
-    scanf("%[^\n]", bc);
+    scanf("%[^\n]", bc1);
 
     printf("\n\n 2-Your score in EN is B2 or above?\n\n Answer yes or no: ");
     scanf("%[^\n]", en);
@@ -67,6 +84,8 @@ void job2() {
 
 void job3() {
     char bc[5];
+    char bc1[5];
+    char bc2[5];
     char en[5];
     char uni[20];
 
@@ -79,10 +98,10 @@ void job3() {
     scanf("%[^\n]", uni);
 
     printf("\n 2-Practical skill \n   Do you have this skill?\n\n Answer yes or no: ");
-    scanf("%[^\n]", bc);
+    scanf("%[^\n]", bc1);
 
     printf("\n 3-Soft skills \n   Do you have this skill?\n\n Answer yes or no: ");
-    scanf("%[^\n]", bc);
+    scanf("%[^\n]", bc2);
 
     printf("\n 4-Your score in EN is B2 or above ? \n\n Answer yes or no: ");
     scanf("%[^\n]", en);
@@ -90,6 +109,8 @@ void job3() {
 
 void job4() {
     char bc[5];
+    char bc1[5];
+    char bc2[5];
     char en[5];
     char uni[20];
 
@@ -103,28 +124,13 @@ void job4() {
     scanf("%[^\n]", uni);
 
     printf("\n 2-Communication skill \n   Do you have this skill? \n\n Answer yes or no: ");
-    scanf("%[^\n]", bc);
+    scanf("%[^\n]", bc1);
 
     printf("\n 3-Explanation skill \n   Do you have this skill? \n\n Answer yes or no: ");
-    scanf("%[^\n]", bc);
+    scanf("%[^\n]", bc2);
 
     printf("\n 4-Your score in EN is B2 or above ? \n\n Answer yes or no: ");
     scanf("%[^\n]", en);
-}
-
-void req() {
-    char name [100];
-    printf("\n your name is: ");
-
-    scanf(" %[^\n]", name);
-
-    printf("\n your age: ");
-    float age;
-    scanf("%f", &age);
-
-    printf("\n How many years of experience do you have : ");
-    float exp;
-    scanf("%f", &exp);
 }
 
 void acceptance() {
@@ -147,11 +153,11 @@ int ex() {
         printf("Please enter number from 1 to 5: \n");
         scanf("%d", &rate);
     }
-    printf("if you have problem send here: www.hireX.com\n or text us on: abdelrahmanelsabea@gmail.com\n ");
+    printf("\nif you have a problem send here: www.hireX.com\n or text us on: abdelrahmanelsabea@gmail.com\n ");
     printf("or please tell us here:\n");
-    scanf("%[^\n]", prob);
+    scanf("%s", prob);
 
-    printf("thanks for using our Site");
+    printf("\nthanks for using our Site");
     return 0;
 }
 
@@ -164,7 +170,6 @@ void add_job(char company[100], char job_field[100], char job[200]) {
 
 int main(void) {
     int x;
-
     printf("-------- Welcome to Hirex --------\n   (the best place to find & offer a job) \n");
     printf(" 1-find a job\n 2-offer a job \n 3-exit \n select an option: ");
     scanf("%d", &x);
