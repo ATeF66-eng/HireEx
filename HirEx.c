@@ -165,9 +165,9 @@ void acceptance() {
 
 void add_job(char company[100], char job_field[100], char job[200]) {
     printf("\nNew job added successfully!\n");
-    printf("Field: %[^\n]\n", job_field);
-    printf("Job:  %[^\n]\n", job);
-    printf("Company: %[^\n]\n\n", company);
+    printf("Field: %s\n", job_field);
+    printf("Job:  %s\n", job);
+    printf("Company: %sn\n", company);
 }
 
 int main(void) {
