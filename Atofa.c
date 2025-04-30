@@ -50,7 +50,7 @@ void job1() {
     printf("\n\n\nThe requirements for this job are: \n");
     printf("\n 1-Do you have a bachelor of Engineering \n\n Answer yes or no: ");
     scanf("%s", &bc);
-    printf("\n\n 2-Your score in EN is B2 or aove ? \n\n Answer yes or no: ");
+    printf("\n\n 2-Your score in EN is B2 or above ? \n\n Answer yes or no: ");
     scanf("%s", &en);
 
 }
@@ -63,7 +63,7 @@ void job2() {
     printf("\n\n\nThe requirements for this job are:\n");
     printf("\n 1-Do you have a bachelor of medicine? \n\n Answer yes or no: ");
     scanf("%s", &bc);
-    printf("\n\n 2-Your score in EN is B2 or aove?\n\n Answer yes or no: ");
+    printf("\n\n 2-Your score in EN is B2 or above?\n\n Answer yes or no: ");
     scanf("%s", &en);
 
 }
@@ -80,7 +80,7 @@ void job3() {
     scanf("%s",&bc);
     printf("\n 3-Soft skills \n   Do you have this skill?\n\n Answer yes or no: ");
     scanf("%s", &bc);
-    printf("\n 4-Your score in EN is B2 or aove ? \n\n Answer yes or no: ");
+    printf("\n 4-Your score in EN is B2 or above ? \n\n Answer yes or no: ");
     scanf("%s", &en);
 
 }
@@ -97,7 +97,7 @@ void job4() {
     scanf("%s",&bc);
     printf("\n 3-Explanation skill \n   Do you have this skill? \n\n Answer yes or no: ");
     scanf("%s",&bc);
-    printf("\n 2-Your score in EN is B2 or aove ? \n\n Answer yes or no: ");
+    printf("\n 2-Your score in EN is B2 or above ? \n\n Answer yes or no: ");
     scanf("%s",&en);
 }
 
