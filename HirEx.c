@@ -154,7 +154,7 @@ void job4() {
 }
 
 void acceptance() {
-    int exp;
+    float exp;
     if (exp >= 3) {
         printf("\nThanks for your submit... \n Our experts are reviewing your form , we will call you back soon\n\n");
     } else {
